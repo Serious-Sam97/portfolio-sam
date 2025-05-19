@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MatrixRainBackground from '../MatrixRainBackground';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
+
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth <= 640);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
+
   return (
-    <div className="relative min-h-screen font-mono w-screen">
+    <div className={`relative min-h-screen font-mono w-screen ${isMobile ? 'px-10' : ''}`}>
       <MatrixRainBackground />
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-6xl md:text-7xl font-extrabold text-green-300 drop-shadow-glow mb-4 text-center">

@@ -102,4 +102,13 @@ body {
   text-shadow: 0 0 8px #00ffae, 0 0 18px #1aff6b, 0 0 24px #19ff19;
 }
 
+@media (min-width: 640px) {
+  .project-padding {
+    padding-bottom: calc(var(--spacing) * 350) !important
+  }
+
+}
+  .project-padding {
+    padding-bottom: calc(var(--spacing) * 1000)
+  }
 
