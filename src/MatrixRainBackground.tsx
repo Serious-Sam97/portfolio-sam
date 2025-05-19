@@ -11,7 +11,7 @@ const MatrixRainBackground: React.FC = () => {
     let lastTime = 0;
     const frameDelay = 60;
 
-    function resizeCanvas(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
+    function resizeCanvas(canvas: HTMLCanvasElement) {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       columns = [];
@@ -56,8 +56,8 @@ const MatrixRainBackground: React.FC = () => {
     if (canvas) {
       const ctx = canvas.getContext('2d');
       if (ctx) {
-        resizeCanvas(canvas, ctx);
-        window.addEventListener('resize', () => resizeCanvas(canvas, ctx));
+        resizeCanvas(canvas);
+        window.addEventListener('resize', () => resizeCanvas(canvas));
         animate(performance.now());
       }
     }

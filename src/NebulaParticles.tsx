@@ -97,7 +97,7 @@ const NebulaWithBlendedImage: React.FC<NebulaWithBlendedImageProps> = ({
             display: 'block',
             pointerEvents: 'none',
             zIndex: 20,
-            animation: 'slowSpin 300s linear infinite',
+            animation: 'slowSpin 250s linear infinite',
           }}
           draggable={false}
         />
