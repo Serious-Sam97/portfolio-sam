@@ -72,9 +72,10 @@ button:focus-visible {
 @tailwind utilities;
 
 body {
-  background-color: #111827;
-  color: #ffffff;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  @apply bg-black text-green-300;
+  font-family: 'Share Tech Mono', 'Fira Mono', 'Menlo', 'Consolas', monospace;
+}
+
+.drop-shadow-glow {
+  text-shadow: 0 0 8px #00ffae, 0 0 18px #1aff6b, 0 0 24px #19ff19;
 }
