@@ -2,7 +2,7 @@ import React from 'react';
 import MatrixRainBackground from './MatrixRainBackground';
 
 const App: React.FC = () => (
-  <div className="relative min-h-screen font-mono">
+  <div className="relative min-h-screen font-mono w-full">
     <MatrixRainBackground />
     <main className="relative z-10 flex flex-col items-center justify-center min-h-screen">
       <h1 className="text-6xl md:text-7xl font-extrabold text-green-300 drop-shadow-glow mb-4 text-center">
