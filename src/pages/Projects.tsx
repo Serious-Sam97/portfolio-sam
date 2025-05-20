@@ -59,8 +59,8 @@ const Projects: React.FC = () => {
                   alt={proj.title}
                   className={`rounded-xl w-full h-44 object-fill mb-5 border-2 border-white/10 shadow ${proj.image ? 'transition-transform duration-300 hover:scale-160' : ''}`} 
                 />
-                <h3 className="text-2xl font-semibold text-cyan-300 mb-2">{proj.title}</h3>
-                <p className="text-gray-200 mb-4">{proj.desc}</p>
+                <h3 className="text-2xl font-semibold text-cyan-300 mb-2 text-center">{proj.title}</h3>
+                <p className="text-gray-200 mb-4 text-center">{proj.desc}</p>
                 <div className="flex gap-3 mb-4 flex-wrap justify-center">
                   {proj.stack.map((s) => (
                     <span key={s} className="px-3 py-1 rounded-full bg-cyan-800 text-cyan-100 text-xs font-bold shadow">{s}</span>

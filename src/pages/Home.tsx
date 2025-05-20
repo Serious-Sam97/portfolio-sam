@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
+  const [ aboutMe, setAboutMe ] = useState(false);
+
+  const openResume = () => {
+    window.open('/resume.pdf', '_blank', 'noopener,noreferrer')
+  }
 
   useEffect(() => {
     const handler = () => setIsMobile(window.innerWidth <= 640);
@@ -21,27 +26,36 @@ const Home: React.FC = () => {
         <h2 className="text-xl md:text-2xl font-medium text-green-200 mb-8 text-center">
           Senior Software Engineer
         </h2>
-        <div className='flex gap-8 justify-center mb-8'>
-          <button className='bg-purple-900'>
-            <p>About Me</p>
-          </button>
-          <Link to={'/projects'} className='bg-purple-900 button'>
-            <p className='--color-green'>Personal Projects</p>
-          </Link>
-          <button className='bg-purple-900'>
-            <p>Resume</p>
-          </button>
-        </div>
+        {
+          aboutMe ? (
+            <div className={`${isMobile ? 'w-lvw p-3' : 'w-100'} mb-8`}>
+              <p onClick={() => setAboutMe(false)} className='text-sm pb-5 cursor-pointer'> Go Back </p>
+              <p className='text-center'>Fullstack Developer and Software Architect with over 8 years of experience delivering robust and scalable systems for companies in Brazil and abroad. Solid background in both backend (Java, PHP) and modern frontend (React, Vue.js), working across monolithic and microservices architectures. Experienced in cloud and on-premises projects, always focused on code quality, security, and performance. Skilled at translating business needs into clear technical solutions, managing the full development lifecycle from design to deployment.Fullstack </p>
+            </div>
+          ) : (
+            <div className='flex gap-8 justify-center mb-8'>
+              <button onClick={() => setAboutMe(true)} className='bg-purple-900'>
+                <p>About Me</p>
+              </button>
+              <Link to={'/projects'} className='bg-purple-900 button'>
+                <p className='--color-green'>Personal Projects</p>
+              </Link>
+              <button onClick={() => openResume()} className='bg-purple-900'>
+                <p>Resume/CV</p>
+              </button>
+            </div>
+          )
+        }
         <div className="max-w-xl bg-black/70 p-8 rounded-2xl shadow-lg border border-green-700/40">
           <div className="flex gap-8 justify-center mb-2">
             <a href="https://github.com/Serious-Sam97" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition">
-              <img src="/github-mark-white.svg" alt="GitHub" />
+              GitHub
             </a>
             <a href="https://www.linkedin.com/in/samir-antoun-freitas-aniz/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition">
-              <img src="/linkedin.svg" alt="LinkedIn"/>
+              LinkedIn
             </a>
             <a href="mailto:samiraniz.jar@gmail.com" className="hover:scale-110 transition">
-              <img src="/mail.svg" alt="Email"/>
+              Email
             </a>
           </div>
           <p className="text-lg text-green-100 text-center mb-2">
