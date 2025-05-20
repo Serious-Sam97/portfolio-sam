@@ -10,7 +10,7 @@ const projects = [
   stack: ['Java', 'Spring Boot', 'React', 'Tailwind', 'Postgres'],
   repo: "https://github.com/Serious-Sam97/vortexos",
   secondRepo: 'https://github.com/Serious-Sam97/vortexos-frontend',
-  live: ""
+  live: "https://vortexos-seven.vercel.app/"
   },
   {
   title: "RustyNES",
@@ -26,7 +26,7 @@ const projects = [
   image: "/portifolio.png",
   stack: ['Javascript', 'React.js', 'Tailwind'],
   repo: "https://github.com/Serious-Sam97/portfolio-sam",
-  live: ""
+  live: "https://portfolio-sam-97.vercel.app/"
   },
   {
   title: "ROMs Management Scripts",
