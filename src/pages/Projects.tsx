@@ -4,37 +4,45 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
-  title: "VortexOS",
-  desc: "A simulated operating system inspired by Windows 98, featuring movable windows, process management, a functional task manager, file explorer, notepad, and a game progress tracker. All integrated in an interactive web environment.",
-  image: "/vortexos.png",
-  stack: ['Java', 'Spring Boot', 'React', 'Tailwind', 'Postgres'],
-  repo: "https://github.com/Serious-Sam97/vortexos",
-  secondRepo: 'https://github.com/Serious-Sam97/vortexos-frontend',
-  live: "https://vortexos-seven.vercel.app/"
+    title: "VortexOS",
+    desc: "A simulated operating system inspired by Windows 98, featuring movable windows, process management, a functional task manager, file explorer, notepad, and a game progress tracker. All integrated in an interactive web environment.",
+    image: "/vortexos.png",
+    stack: ['Java', 'Spring Boot', 'React', 'Tailwind', 'Postgres'],
+    repo: "https://github.com/Serious-Sam97/vortexos",
+    secondRepo: 'https://github.com/Serious-Sam97/vortexos-frontend',
+    live: "https://vortexos-seven.vercel.app/"
   },
   {
-  title: "RustyNES",
-  desc: "RustyNES is a NES (Nintendo Entertainment System) emulator written in Rust, designed to emulate the classic 8-bit gaming experience. This project aims to accurately recreate the behavior of the NES’s 6502 CPU, PPU (Picture Processing Unit), and memory architecture, making it a great learning resource for low-level programming, emulation techniques, and Rust development.",
-  image: "/nes.png",
-  stack: ['Rust'],
-  repo: "https://github.com/Serious-Sam97/rusty_nes",
-  live: ""
+    title: "RustyNES",
+    desc: "RustyNES is a NES (Nintendo Entertainment System) emulator written in Rust, designed to emulate the classic 8-bit gaming experience. This project aims to accurately recreate the behavior of the NES’s 6502 CPU, PPU (Picture Processing Unit), and memory architecture, making it a great learning resource for low-level programming, emulation techniques, and Rust development.",
+    image: "/nes.png",
+    stack: ['Rust'],
+    repo: "https://github.com/Serious-Sam97/rusty_nes",
+    live: ""
   },
   {
-  title: "Portifolio Sam",
-  desc: "This portifolio :)",
-  image: "/portifolio.png",
-  stack: ['Javascript', 'React.js', 'Tailwind'],
-  repo: "https://github.com/Serious-Sam97/portfolio-sam",
-  live: "https://portfolio-sam-97.vercel.app/"
+    title: "Portifolio Sam",
+    desc: "This portifolio :)",
+    image: "/portifolio.png",
+    stack: ['Javascript', 'React.js', 'Tailwind'],
+    repo: "https://github.com/Serious-Sam97/portfolio-sam",
+    live: "https://portfolio-sam-97.vercel.app/"
   },
   {
-  title: "ROMs Management Scripts",
-  desc: "PowerShell scripts to efficiently filter and organize large ROM sets, removing duplicates and unwanted regions. Designed to streamline curation of massive game collections.",
-  image: "",
-  stack: ['Powershell'],
-  repo: "https://github.com/Serious-Sam97/roms-managment-scripts",
-  live: ""
+    title: "Peek Cam",
+    desc: "A silly project using OpenCV lib to detect faces using your WebCam.",
+    image: "/faces.png",
+    stack: ['Python', 'OpenCV'],
+    repo: "https://github.com/Serious-Sam97/peek-cam",
+    live: ""
+  },
+  {
+    title: "ROMs Management Scripts",
+    desc: "PowerShell scripts to efficiently filter and organize large ROM sets, removing duplicates and unwanted regions. Designed to streamline curation of massive game collections.",
+    image: "",
+    stack: ['Powershell'],
+    repo: "https://github.com/Serious-Sam97/roms-managment-scripts",
+    live: ""
   },
 ];
 
@@ -46,7 +54,7 @@ const Projects: React.FC = () => {
         <div className='bg-gradient-to-b from-[#1e2537]/50 to-[#21242b]/50 p-10 rounded-lg'>
           <div className='flex justify-between'>
             <Link to={'/'}>
-              <p className="text-sm font-bold text-blue-200 mb-10 text-center cursor-pointer">Back</p>
+              <p className="text-sm font-bold text-blue-200 mb-10 text-center cursor-pointer underline">Back</p>
             </Link>
             <h2 className="text-3xl font-bold text-blue-200 mb-10 text-center">Projects</h2>
             <h2 className="text-3xl font-bold text-blue-200 mb-10 text-center"></h2>
@@ -57,7 +65,7 @@ const Projects: React.FC = () => {
                 <img
                   src={proj.image}
                   alt={proj.title}
-                  className={`rounded-xl w-full h-44 object-fill mb-5 border-2 border-white/10 shadow ${proj.image ? 'transition-transform duration-300 hover:scale-160' : ''}`} 
+                  className={`rounded-xl w-full h-60 object-fill mb-5 border-2 border-white/10 shadow ${proj.image ? 'transition-transform duration-300 hover:scale-140' : ''}`} 
                 />
                 <h3 className="text-2xl font-semibold text-cyan-300 mb-2 text-center">{proj.title}</h3>
                 <p className="text-gray-200 mb-4 text-center">{proj.desc}</p>
