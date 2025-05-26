@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "Peek Cam",
-    desc: "A silly project using OpenCV lib to detect faces using your WebCam.",
+    desc: "A silly project using OpenCV lib to detect faces using your WebCam.\n\n main.py: Detection faces Script \n register_face.py: Store a detected face on a dataset folder to use on training for face recognition",
     image: "/faces.png",
     stack: ['Python', 'OpenCV'],
     repo: "https://github.com/Serious-Sam97/peek-cam",
@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
                   className={`rounded-xl w-full h-60 object-fill mb-5 border-2 border-white/10 shadow ${proj.image ? 'transition-transform duration-300 hover:scale-140' : ''}`} 
                 />
                 <h3 className="text-2xl font-semibold text-cyan-300 mb-2 text-center">{proj.title}</h3>
-                <p className="text-gray-200 mb-4 text-center">{proj.desc}</p>
+                <p style={{ whiteSpace: 'pre-line' }} className="text-gray-200 mb-4 text-center">{proj.desc}</p>
                 <div className="flex gap-3 mb-4 flex-wrap justify-center">
                   {proj.stack.map((s) => (
                     <span key={s} className="px-3 py-1 rounded-full bg-cyan-800 text-cyan-100 text-xs font-bold shadow">{s}</span>
