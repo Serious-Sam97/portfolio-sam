@@ -21,12 +21,13 @@ const projects = [
     live: ""
   },
   {
-    title: "Portifolio Sam",
-    desc: "This portifolio :)",
-    image: "/portifolio.png",
-    stack: ['Javascript', 'React.js', 'Tailwind'],
-    repo: "https://github.com/Serious-Sam97/portfolio-sam",
-    live: "https://portfolio-sam-97.vercel.app/"
+    title: "Yondra",
+    desc: "Yondra is a modern, lightweight project management platform inspired by agile workflows, it offers a fast and intuitive experience for teams managing tasks, sprints, and boards. Designed for clarity, speed, and control — without the bloat. \n I created to use on my new projects",
+    image: "/yondra.jpg",
+    stack: ['Laravel 12', 'Vue 3'],
+    repo: "https://github.com/Serious-Sam97/yondra",
+    secondRepo: 'https://github.com/Serious-Sam97/yondra-frontend',
+    live: ""
   },
   {
     title: "Peek Cam",
@@ -35,6 +36,14 @@ const projects = [
     stack: ['Python', 'OpenCV'],
     repo: "https://github.com/Serious-Sam97/peek-cam",
     live: ""
+  },
+  {
+    title: "Portifolio Sam",
+    desc: "This portifolio :)",
+    image: "/portifolio.png",
+    stack: ['Javascript', 'React.js', 'Tailwind'],
+    repo: "https://github.com/Serious-Sam97/portfolio-sam",
+    live: "https://portfolio-sam-97.vercel.app/"
   },
   {
     title: "ROMs Management Scripts",
