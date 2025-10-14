@@ -27,7 +27,7 @@ const projects = [
     stack: ['Laravel 12', 'React.js', 'Next.js'],
     repo: "https://github.com/Serious-Sam97/yondra",
     secondRepo: 'https://github.com/Serious-Sam97/yondra-frontend',
-    live: "https://yondra-thunder.vercel.app/"
+    live: "https://yondra-thunder.vercel.app/dashboard"
   },
   {
     title: "Peek Cam",
