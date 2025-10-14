@@ -21,13 +21,13 @@ const projects = [
     live: ""
   },
   {
-    title: "Yondra",
+    title: "Yondra (Work in progress)",
     desc: "Yondra is a modern, lightweight project management platform inspired by agile workflows, it offers a fast and intuitive experience for teams managing tasks, sprints, and boards. Designed for clarity, speed, and control — without the bloat. \n I created to use on my new projects",
     image: "/yondra.jpg",
-    stack: ['Laravel 12', 'Vue 3'],
+    stack: ['Laravel 12', 'React.js', 'Next.js'],
     repo: "https://github.com/Serious-Sam97/yondra",
     secondRepo: 'https://github.com/Serious-Sam97/yondra-frontend',
-    live: ""
+    live: "https://yondra-thunder.vercel.app/"
   },
   {
     title: "Peek Cam",
