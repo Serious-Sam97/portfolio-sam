@@ -13,14 +13,6 @@ const projects = [
     live: "https://vortexos-seven.vercel.app/"
   },
   {
-    title: "RustyNES",
-    desc: "RustyNES is a NES (Nintendo Entertainment System) emulator written in Rust, designed to emulate the classic 8-bit gaming experience. This project aims to accurately recreate the behavior of the NES’s 6502 CPU, PPU (Picture Processing Unit), and memory architecture, making it a great learning resource for low-level programming, emulation techniques, and Rust development.",
-    image: "/nes.png",
-    stack: ['Rust'],
-    repo: "https://github.com/Serious-Sam97/rusty_nes",
-    live: ""
-  },
-  {
     title: "Yondra (Work in progress)",
     desc: "Yondra is a modern, lightweight project management platform inspired by agile workflows, it offers a fast and intuitive experience for teams managing tasks, sprints, and boards. Designed for clarity, speed, and control — without the bloat. \n I created to use on my new projects",
     image: "/yondra.jpg",
@@ -28,6 +20,22 @@ const projects = [
     repo: "https://github.com/Serious-Sam97/yondra",
     secondRepo: 'https://github.com/Serious-Sam97/yondra-frontend',
     live: "https://yondra-thunder.vercel.app/dashboard"
+  },
+  {
+    title: "Retro Artisan",
+    desc: "Retro Artisan is a Scrapper made to get the box art of your games, just by showing your roms folder",
+    image: "/retroartisan.jpg",
+    stack: ['Swift'],
+    repo: "https://github.com/Serious-Sam97/retro-artisan",
+    live: ""
+  },
+  {
+    title: "RustyNES",
+    desc: "RustyNES is a NES (Nintendo Entertainment System) emulator written in Rust, designed to emulate the classic 8-bit gaming experience. This project aims to accurately recreate the behavior of the NES’s 6502 CPU, PPU (Picture Processing Unit), and memory architecture, making it a great learning resource for low-level programming, emulation techniques, and Rust development.",
+    image: "/nes.png",
+    stack: ['Rust'],
+    repo: "https://github.com/Serious-Sam97/rusty_nes",
+    live: ""
   },
   {
     title: "Peek Cam",
